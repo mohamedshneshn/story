@@ -13,7 +13,7 @@ remote repository: where your changes are saved on a remote server (github, bitb
 
 
 to get started, you need to install git on your computer.
-you can download it from git-scm.com
+you can download it from https://git-scm.com/downloads 
 
 1- open the terminal
 2- type git --version
@@ -59,6 +59,8 @@ git commands
 7-git diff - shows the difference between the working directory and the staging area
     git diff <file> - shows the difference between the working directory and the staging area for a specific file
     git diff - shows the difference between the working directory and the staging area for all files
+         
+               <!-- -------------------------------------------------------------- -->  
 
 how to create a remote repository on github
 1- create a new repository on github
@@ -66,17 +68,21 @@ how to create a remote repository on github
 3-git remote add origin https://github.com/mohamedshneshn/ooooo.git (add the remote repository to your local repository)
 4- git push -u origin main (push your local repository to the remote repository)
 
+
+              <!-- -------------------------------------------------------------- -->
 how to push changes to github
 1- open the terminal
 2- type git add .
 3- type git commit -m "commit message"
 4- type git push
 
+               <!-- -------------------------------------------------------------- -->
 how to pull changes from github
 1- open the terminal
 2- type git pull
+                <!-- -------------------------------------------------------------- -->
 
-hoe to ignore files
+how to ignore files (node_modules, .env, .DS_Store, api keys, passwords, etc)
 1- create a .gitignore file
 2- add the files you want to ignore to the .gitignore file
 3- git add .
@@ -85,3 +91,42 @@ hoe to ignore files
 
 what is DS_Store?
 DS_Store is a file that stores custom attributes of its containing folder, such as the position of icons or the choice of a background image. It is used by the Finder on Mac OS X and by the Explorer on Windows. It is also used by some other applications, like the X11 window manager on Unix-like systems.
+              <!-- -----------------------------------------------------------  -->
+
+how to clone a repository from github to your computer (git clone)
+1- open the terminal
+2- type git clone (url of the repository you want to clone )  
+             
+                <!-- -----------------------------------------------------------  -->
+why do we use branches?
+1-branches allow you to work on different versions of a repository at the same time
+  by isolating your work from the main branch.
+2-branches allow you to collaborate with other developers on the same project.
+3-branches allow you to test new features without affecting the main branch.
+
+
+              
+how to create a new branch (git branch)
+
+1- git branch (name of the branch you want to create)
+3- type git checkout (name of the branch you want to create)
+4- type git push -u origin (name of the branch you want to create)
+
+git branch   - shows a list of all branches
+git checkout (name of the branch you want to switch to) - switches to a specific branch
+
+
+how to merge a branch to the main branch (git merge)
+1- open the terminal
+2- type git checkout main
+3- type git merge (name of the branch you want to merge)
+4- type git push
+
+how to delete a branch (git branch -d)
+1- open the terminal
+2- type git branch -d (name of the branch you want to delete)
+
+how to create a new branch and switch to it (git checkout -b)
+1- open the terminal
+2- type git checkout -b (name of the branch you want to create)
+
