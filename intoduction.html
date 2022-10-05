@@ -100,10 +100,12 @@ how to clone a repository from github to your computer (git clone)
                 <!-- -----------------------------------------------------------  -->
 
 why do we use branches?
-1-branches allow you to work on different versions of a repository at the same time
+1-branch makes a copy of the main branch and allows you to work on it without affecting the main branch.
+2-branches allow you to work on different versions of a repository at the same time
   by isolating your work from the main branch.
-2-branches allow you to collaborate with other developers on the same project.
-3-branches allow you to test new features without affecting the main branch.
+3-branches allow you to collaborate with other developers on the same project.
+4-branches allow you to test new features without affecting the main branch.
+
 
 
               
@@ -114,19 +116,55 @@ git branch                 - shows a list of all branches
 git checkout (name of the branch you want to switch to) - switches to a specific branch
 
 
+
 how to merge a branch to the main branch (git merge)
 
  git checkout main                                       - switches to the main branch
  git merge (name of the branch you want to merge)        - merges the branch to the main branch
- git push                                                - pushes the changes to the remote repository
+ git push -u origin main                                 - pushes the changes to the remote repository
+ git push -u origin (new branch)
 
 
  
 how to delete a branch (git branch -d)
-1- open the terminal
-2- type git branch -d (name of the branch you want to delete)
 
-how to create a new branch and switch to it (git checkout -b)
-1- open the terminal
-2- type git checkout -b (name of the branch you want to create)
+1- git branch -d (name of the branch you want to delete)
+
+<!-- ----------------------------------------------------------------------------------------  -->
+
+how to create a new branch from github ?
+
+1- create a new branch from github
+2- compare and pull request (create a pull request to merge the new branch to the main branch)
+3- merge the pull request
+
+<!-- ----------------------------------------------------------------------------------------  -->
+
+what is a fork and how to fork a repository from github ?
+
+1- a fork is a copy of a repository
+2- to fork a repository from github, click on the fork button on the top right corner of the repository page
+
+<!-- ----------------------------------------------------------------------------------------  -->
+
+what is the difference between fork and clone ?
+
+1- a fork is a copy of a repository on github
+2- a clone is a copy of a repository on your computer
+
+what is a pull request ?
+
+1- a pull request is a way to notify the owner of a repository that you have made changes to a fork of
+ their repository and you would like them to consider merging those changes into
+ the original repository.
+ 
+
+
+what is the difference between git pull and git fetch ?
+
+1- git pull = git fetch + git merge
+2- git fetch = fetches the changes from the remote repository to your local repository
+
+<!-- ----------------------------------------------------------------------------------------  -->
+
 
